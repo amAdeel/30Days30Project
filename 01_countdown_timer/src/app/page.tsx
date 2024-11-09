@@ -1,4 +1,5 @@
 import { Countdown } from '@/components/countdown'
+import { Liveclock } from '@/components/liveclock'
 import React from 'react'
 
 const Page = () => {
@@ -6,6 +7,8 @@ const Page = () => {
   <>  
     <div>
       <Countdown/>
+    
+      <Liveclock/>
     </div>
   </>
   )

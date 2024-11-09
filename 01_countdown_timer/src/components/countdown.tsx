@@ -2,7 +2,9 @@
 import { useState, useRef, useEffect, ChangeEvent } from "react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+import { IoMdArrowRoundForward } from "react-icons/io"
 import React from 'react';
+import Link from "next/link";
 
 export const Countdown = () => {
   const [duration, setDuration] = useState<number | string>(""); // Initialized as number
@@ -145,6 +147,12 @@ export const Countdown = () => {
               Reset
             </Button>
           </div>
+        </div>
+        <br/>
+        <div className="text-5xl text-center">
+         <Link href="/liveclock"> 
+        <IoMdArrowRoundForward />
+        </Link>
         </div>
       </div>
     </>
