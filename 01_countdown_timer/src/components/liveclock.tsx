@@ -1,6 +1,7 @@
 "use client"
 import React, { useState,useEffect } from 'react';
 import { IoMdArrowRoundBack } from "react-icons/io";
+import { IoMdArrowRoundForward } from "react-icons/io"
 import Link from 'next/link';
 export const Liveclock = () => {
    
@@ -60,11 +61,19 @@ export const Liveclock = () => {
         </div>
       </div>
       <br/>
+      <div className='flex gap-10'>
       <div className="text-5xl text-center">
         <Link href="./"> 
            <IoMdArrowRoundBack />
         </Link>
-       </div>    
+       </div>
+       <div className="text-5xl text-center">
+         <Link href="/alarm">
+        <IoMdArrowRoundForward />
+        </Link>
+        </div>
+        </div>
+    
     </div>
   );
 };
